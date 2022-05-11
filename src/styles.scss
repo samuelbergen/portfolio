@@ -3,6 +3,15 @@ body {
     background-color: #000000;
     color: #ececec;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.section {
+    padding: 0 12%;
+}
+
+.bg-darkgrey {
+    background-color: #111111;
 }
 
 h1 {
@@ -47,10 +56,20 @@ button {
     width: 294px;
     height: 64px;
     background-color: unset;
-    border: 1px solid;
+    border: 2px solid;
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.btn-small {
+    width: 200px !important;
+    height: 50px !important;
+}
+
+.btn-middle {
+    width: 240px !important;
+    height: 54px !important;
 }
 
 .btn-primary {
@@ -58,12 +77,12 @@ button {
     border-color: #03ff18;
 
     &:hover {
-        color: #efefef;
+        color: #000000;
         background-color: #03ff18;
     }
 
     &:disabled {
-        color: #efefef;
+        color: #000000;
     }
 }
 
@@ -72,12 +91,18 @@ button {
     border-color: #FF16A7;
 
     &:hover {
-        color: #efefef;
+        color: #000000;
         background-color: #FF16A7;
     }
 
     &:disabled {
         color: #efefef;
+    }
+}
+
+@media (min-width: 1600px) {
+    .section {
+        padding: 0 18%;
     }
 }
 

@@ -12,4 +12,14 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hover = [];
+
+  hoverTrue(i) {
+    this.hover[i] = true;
+  }
+
+  hoverFalse(i) {
+    this.hover[i] = false;
+  }
+
 }

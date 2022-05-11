@@ -3,15 +3,12 @@ main {
     left: 0;
     right: 0;
     top: 104px;
-    padding: 0 12%;
     align-items: center;
     justify-content: space-between;
 }
 
 @media (min-width: 1600px) {
-    main {
-        padding: 0 18%;
-    }
+    
 }
 
 @media (max-width: 776px) {
