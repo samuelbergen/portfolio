@@ -3,17 +3,18 @@ header {
     left: 0;
     right: 0;
     top: 0;
-    height: 104px;
+    height: 80px;
     z-index: 1;
     padding: 0 12%;
     background-color: #000000;
+    box-shadow: 0 0 3px 0 #ffffff;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     img {
-        height: 56px;
+        height: 48px;
         cursor: pointer;
     }
 

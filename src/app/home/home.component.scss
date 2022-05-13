@@ -1,11 +1,12 @@
 .home-container {
-    height: calc(100vh - 104px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
 }
 
 .introduction-container {
-    height: calc(100vh - 204px);
+    height: calc(100vh - 180px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,14 +41,15 @@
 }
 
 i {
-    padding: 16px 56px;
+    padding: 24px;
+    border-radius: 100%;
     color: #efefef;
     cursor: pointer;
     font-size: 44px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 
     &:hover {
-        // background-color: #ffffff10;
+        background-color: #111111;
         color: #03ff18;
     }
 }

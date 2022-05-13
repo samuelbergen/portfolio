@@ -1,0 +1,23 @@
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+}
+
+.about-me-img {
+    width: 32%;
+    max-width: 376px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 10vh;
+}
+
+.about-me-text {
+    text-align: justify;
+
+    p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}

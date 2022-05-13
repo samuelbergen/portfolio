@@ -1,3 +1,15 @@
 <div class="section">
-    
+    <div class="contact-container">
+        <h2 class="secondary">Contact me.</h2>
+        <p>Get in touch via the form below, or by emailing <a class="secondary" href="#">kontakt@samuel-bergen.de</a></p>
+        <form action="https://samuel-bergen.de/send_mail/send_mail.php" method="POST" autocomplete="off">
+            <label for="name" class="form-label">Name*</label>
+            <input name="name" id="name" placeholder="Enter your name" required autocomplete="off">
+            <label class="form-label">Email*</label>
+            <input name="email" type="email" placeholder="Enter your Email address" required autocomplete="off">
+            <label class="form-label">Message*</label>
+            <textarea name="message" placeholder="Enter your message" required autocomplete="off"></textarea>
+            <button class="btn-secondary" type="submit">Send</button>
+        </form>
+    </div>
 </div>

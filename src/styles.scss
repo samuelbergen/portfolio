@@ -23,12 +23,16 @@ h1 {
 }
 
 h2 {
-    padding-top: 5vh;
     margin-block-start: 0;
     margin-block-end: 0;
     font-weight: 700;
     font-size: 36px;
     text-align: center;
+}
+
+p {
+    font-size: 20px;
+    line-height: 25px;
 }
 
 img {
@@ -46,10 +50,6 @@ img {
 
 .secondary {
     color: #FF16A7;
-
-    &:hover {
-        color: #03ff18;
-    }
 }
 
 button {
