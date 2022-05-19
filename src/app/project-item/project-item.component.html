@@ -1,0 +1,7 @@
+<div class="project-item" (mouseenter)="hoverTrue(i)" (mouseleave)="hoverFalse(i)">
+    <div *ngIf="hover[i]" class="project-info">
+        <span>{{ ps.projectsFiltered[i].description }}</span>
+        <a href="https://www.samuel-bergen.de/{{ ps.projectsFiltered[i].name }}/index.html"><button class="btn-primary btn-small">Try it out</button></a>
+    </div>
+    <img class="project-img" src="assets/img/{{ ps.projectsFiltered[i].name }}.png">
+</div>

@@ -4,6 +4,9 @@ h2 {
 
 .project-container {
     padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .project-menu {
@@ -16,43 +19,7 @@ h2 {
     }
 }
 
-.project-line {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.project-item {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+app-project-item {
     width: 48%;
     margin-bottom: 5vh;
-    box-shadow: 0 0 4px 0 #ffffff;
-    cursor: pointer;
-}
-
-.project-info {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000de;
-
-    span {
-        text-align: center;
-        margin-bottom: 32px;
-        max-width: 280px;
-    }
-}
-
-.project-img {
-    width: 100%;
-    object-fit: contain;
 }

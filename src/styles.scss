@@ -1,9 +1,13 @@
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #000000;
     color: #ececec;
     font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
 }
 
 .section {
@@ -84,6 +88,11 @@ button {
     &:disabled {
         color: #000000;
     }
+}
+
+.btn-primary.active {
+        color: #000000;
+        background-color: #03ff18;
 }
 
 .btn-secondary {

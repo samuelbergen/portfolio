@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,18 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor(public ps: ProjectService) { }
 
   ngOnInit(): void {
+    this.ps.renderAll();
   }
 
   hover = [];
 
-  hoverTrue(i) {
+  hoverTrue(i: number) {
     this.hover[i] = true;
   }
 
-  hoverFalse(i) {
+  hoverFalse(i: number) {
     this.hover[i] = false;
   }
 

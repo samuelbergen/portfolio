@@ -1,64 +1,11 @@
-<div class="section">
+<div class="section" id="portfolio">
     <h2>My Work</h2>
     <div class="project-menu">
-        <button class="btn-primary btn-middle">All</button>
-        <button class="btn-primary btn-middle">JavaScript</button>
-        <button class="btn-primary btn-middle">Angular</button>
+        <button class="btn-primary btn-middle" id="btn-all" (click)="ps.renderAll()">All</button>
+        <button class="btn-primary btn-middle" id="btn-js" (click)="ps.renderJS()">JavaScript</button>
+        <button class="btn-primary btn-middle" id="btn-angular" (click)="ps.renderAngular()">Angular</button>
     </div>
-    <div class="project-container">
-        <div class="project-line">
-            <div class="project-item" (mouseenter)="hoverTrue(0)" (mouseleave)="hoverFalse(0)">
-                <div *ngIf="hover[0]" class="project-info">
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint alias error ipsum
-                        reiciendis.</span>
-                    <button class="btn-primary btn-small">Try it out</button>
-                </div>
-                <img class="project-img" src="assets/img/notepad.png">
-            </div>
-            <div class="project-item" (mouseenter)="hoverTrue(1)" (mouseleave)="hoverFalse(1)">
-                <div *ngIf="hover[1]" class="project-info">
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint alias error ipsum
-                        reiciendis.</span>
-                    <button class="btn-primary btn-small">Try it out</button>
-                </div>
-                <img class="project-img" src="assets/img/deliveryapp.png">
-            </div>
-        </div>
-        <div class="project-line">
-            <div class="project-item" (mouseenter)="hoverTrue(2)" (mouseleave)="hoverFalse(2)">
-                <div *ngIf="hover[2]" class="project-info">
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint alias error ipsum
-                        reiciendis.</span>
-                    <button class="btn-primary btn-small">Try it out</button>
-                </div>
-                <img class="project-img" src="assets/img/pokedex.png">
-            </div>
-            <div class="project-item" (mouseenter)="hoverTrue(3)" (mouseleave)="hoverFalse(3)">
-                <div *ngIf="hover[3]" class="project-info">
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint alias error ipsum
-                        reiciendis.</span>
-                    <button class="btn-primary btn-small">Try it out</button>
-                </div>
-                <img class="project-img" src="assets/img/kanban.png">
-            </div>
-        </div>
-        <div class="project-line">
-            <div class="project-item" (mouseenter)="hoverTrue(4)" (mouseleave)="hoverFalse(4)">
-                <div *ngIf="hover[4]" class="project-info">
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint alias error ipsum
-                        reiciendis.</span>
-                    <button class="btn-primary btn-small">Try it out</button>
-                </div>
-                <img class="project-img" src="assets/img/elpolloloco.png">
-            </div>
-            <div class="project-item" (mouseenter)="hoverTrue(5)" (mouseleave)="hoverFalse(5)">
-                <div *ngIf="hover[5]" class="project-info">
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint alias error ipsum
-                        reiciendis.</span>
-                    <button class="btn-primary btn-small">Try it out</button>
-                </div>
-                <img class="project-img" src="assets/img/portfolio.png">
-            </div>
-        </div>
+    <div class="project-container" id="project-contain">
+        <app-project-item *ngFor="let project of ps.projectsFiltered; let i = index" [i]="i"></app-project-item>
     </div>
 </div>
